@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="advanced.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+        </script>
+
+</head>
+
+
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home/index.html">Website Name and Logo Here <svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                    <path fill-rule="evenodd"
+                        d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown header">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownStrategies" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Strategies
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownStrategies">
+                            <li><a class="dropdown-item" href="../beginner/beginner.html">Beginner</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../intermediate/intermediate.html">Intermediate</a></li>
+                            <li><a class="dropdown-item" href="advanced.html">Advanced</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../master/master.html">Master</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item header">
+                        <a class="nav-link" href="#">Basics</a>
+                    </li>
+                    <li class="nav-item dropdown header">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTrading" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Trading
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownTrading">
+                            <li><a class="dropdown-item" href="#">ETFs</a></li>
+                            <li><a class="dropdown-item" href="#">Brokers</a></li>
+                            <li><a class="dropdown-item" href="#">Expectations</a></li>
+                            <li><a class="dropdown-item" href="#">Managing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item header">
+                        <a class="nav-link" href="../../definitions/definitions.html">Definitions</a>
+                    </li>
+                    <li class="nav-item header">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="title container">
+        <h1>Advanced Option Strategies</h1>
+    </div>
+
+    <div class="content container">
+
+        <div id="short-call-spread" class="box row">
+            <h2>Short Call Spread</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/short_call_spread.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Sell a call, strike price A</li>
+                    <li>Buy a call, strike price B</li>
+                    <li>Generally, the stock will be below strike A</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+            </div>
+
+        </div>
+
+        <div id="short-put-spread" class="box row">
+            <h2>Short Put Spread</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/short_put_spread.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Buy a put, strike price A</li>
+                    <li>Sell a put, strike price B</li>
+                    <li>Generally, the stock will be above strike B</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="long-straddle" class="box row">
+            <h2>Long Straddle</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/long_straddle.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Buy a call, strike price A</li>
+                    <li>Buy a put, strike price A</li>
+                    <li>Generally, the stock price will be at strike A</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="long-strangle" class="box row">
+            <h2>Long Strangle</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/long_strangle.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Buy a put, strike price A</li>
+                    <li>Buy a call, strike price B</li>
+                    <li>Generally, the stock price will be between strikes A and B</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="back-spread-with-calls" class="box row">
+            <h2>Back Spread With Calls</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/back_spread_with_calls.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Sell a call, strike price A</li>
+                    <li>Buy two calls, strike price B</li>
+                    <li>Generally, the stock will be at or around strike price A</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="back-spread-with-puts" class="box row">
+            <h2>Back Spread With Puts</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/back_spread_with_puts.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Sell a put, strike price B</li>
+                    <li>Buy two puts, strike price A</li>
+                    <li>Generally, the stock will be at or around strike price B</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="long-calendar-spread-with-calls" class="box row">
+            <h2>Long Calendar Spread With Calls</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/long_calendar_spread_with_calls.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Sell a call, strike price A (near-term expiration - "front-month")</li>
+                    <li>Buy a call, strike price A (with expiration one month later - "back-month")</li>
+                    <li>Generally, the stock will be at or around strike A</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="long-calendar-spread-with-puts" class="box row">
+            <h2>Long Calendar Spread With Puts</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/long_calendar_spread_with_puts.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Sell a put, strike price A (near-term expiration - "front-month")</li>
+                    <li>Buy a put, strike price A (with expiration one month later - "back-month")</li>
+                    <li>Generally, the stock will be at or around strike A</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="diagonal-spread-with-calls" class="box row">
+            <h2>Diagonal Spread With Calls</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/diagonal_spread_with_calls.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Sell an out-of-the-money call, strike price A (approx. 30 days from expiration - "front-month")
+                    </li>
+                    <li>Buy a further out-of-the-money call, strike price B (approx. 60 days from expiration -
+                        "back-month")</li>
+                    <li>At expiration of the front-month call, sell another call with strike A and the same expiration
+                        as the back-month call</li>
+                    <li>Generally, the stock will be below strike A</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="diagonal-spread-with-puts" class="box row">
+            <h2>Diagonal Spread With Puts</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/diagonal_spread_with_puts.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Sell an out-of-the-money put, strike price B (near-term expiration - "front-month")</li>
+                    <li>Buy a further out-of-the-money put, strike price A (with expiration one month later -
+                        "back-month")</li>
+                    <li>At expiration of the front-month put, sell another put with strike B and the same expiration as
+                        the back-month put</li>
+                    <li>Generally, the stock will be above strike B</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="long-butterfly-spread-with-calls" class="box row">
+            <h2>Long Butterfly Spread With Calls</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/long_butterfly_spread_with_calls.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Buy a call, strike price A</li>
+                    <li>Sell two calls, strike price B</li>
+                    <li>Buy a call, strike price C</li>
+                    <li>Generally, the stock will be at strike B</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="long-butterfly-spread-with-puts" class="box row">
+            <h2>Long Butterfly Spread With Puts</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/long_butterfly_spread_with_puts.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Buy a put, strike price A</li>
+                    <li>Sell two puts, strike price B</li>
+                    <li>Buy a put, strike price C</li>
+                    <li>Generally, the stock will be at strike B</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="iron-butterfly" class="box row">
+            <h2>Iron Butterfly</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/iron_butterfly.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Buy a put, strike price A</li>
+                    <li>Sell a put, strike price B</li>
+                    <li>Sell a call, strike price B</li>
+                    <li>Buy a call, strike price C</li>
+                    <li>Generally, the stock will be at strike B</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="broken-wing-butterfly-with-calls" class="box row">
+            <h2>Broken Wing Butterfly With Calls</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/broken_wing_butterfly_with_calls.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Buy a call, strike price A</li>
+                    <li>Sell two calls, strike price B</li>
+                    <li>Skip over strike price C</li>
+                    <li>Buy a call, strike price D</li>
+                    <li>Generally, the stock will be at or below strike A</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="broken-wing-butterfly-with-puts" class="box row">
+            <h2>Broken Wing Butterfly With Puts</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/broken_wing_butterfly_with_puts.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Buy a put, strike price A</li>
+                    <li>Skip strike price B</li>
+                    <li>Sell two puts, strike price C</li>
+                    <li>Buy a put, strike price D</li>
+                    <li>Generally, the stock will be at or above strike D</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="inverse-broken-wing-butterfly-with-calls" class="box row">
+            <h2>Inverse Broken Wing Butterfly With Calls</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/inverse_broken_wing_butterfly_with_calls.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Sell a call with strike price A</li>
+                    <li>Buy two calls with strike price B</li>
+                    <li>Skip over strike price C</li>
+                    <li>Sell a call with strike price D</li>
+                    <li>Generally, the stock will be at or around strike price A</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="inverse-broken-wing-butterfly-with-puts" class="box row">
+            <h2>Inverse Broken Wing Butterfly With Puts</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/inverse_broken_wing_butterfly_with_puts.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Sell a put with strike price D</li>
+                    <li>Buy two puts with strike price C</li>
+                    <li>Skip over strike price B</li>
+                    <li>Sell a put with strike price A</li>
+                    <li>Generally, the stock will be at or around strike price D</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="christmas-tree-butterfly-with-calls" class="box row">
+            <h2>Christmas Tree Butterfly With Calls</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/christmas_tree_butterfly_with_calls.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Buy a call, strike price A</li>
+                    <li>Skip over strike price B</li>
+                    <li>Sell three calls, strike price C</li>
+                    <li>Buy two calls, strike price D</li>
+                    <li>Generally, the stock will be at or around strike A</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="christmas-tree-butterfly-with-puts" class="box row">
+            <h2>Christmas Tree Butterfly With Puts</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/christmas_tree_butterfly_with_puts.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Buy a put, strike price D</li>
+                    <li>Skip over strike price C</li>
+                    <li>Sell three puts, strike price B</li>
+                    <li>Buy two puts, strike price A</li>
+                    <li>Generally, the stock will be at or around strike D</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="long-condor-spread-with-calls" class="box row">
+            <h2>Long Condor Spread With Calls</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/long_condor_spread_with_calls.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Buy a call, strike price A</li>
+                    <li>Sell a call, strike price B</li>
+                    <li>Sell a call, strike price C</li>
+                    <li>Buy a call, strike price D</li>
+                    <li>Generally, the stock will be between strike price B and strike price C</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="long-condor-spread-with-puts" class="box row">
+            <h2>Long Condor Spread With Puts</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/long_condor_spread_with_puts.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Buy a put, strike price A</li>
+                    <li>Sell a put, strike price B</li>
+                    <li>Sell a put, strike price C</li>
+                    <li>Buy a put, strike price D</li>
+                    <li>Generally, the stock will be between strike price B and strike price C</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+        <div id="iron-condor" class="box row">
+            <h2>Iron Condor</h2>
+            <div class="image-box col-12 col-md-6">
+                <img src="../../images/iron_condor.png" alt="img">
+
+            </div>
+
+            <div class="text-box col-12 col-md-6">
+                <h3>Setup</h3>
+                <hr class="rounded">
+                <ul>
+                    <li>Buy a put, strike A</li>
+                    <li>Sell a put, strike B</li>
+                    <li>Sell a call, strike C</li>
+                    <li>Buy a call, strike D</li>
+                    <li>Generally, the stock will be between strike price B and strike price C</li>
+                </ul>
+
+                <button type="button" class="btn btn-success">View Strategy</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

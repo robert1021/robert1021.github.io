@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+        </script>
+
+</head>
+
+
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Website Name and Logo Here <svg xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                    <path fill-rule="evenodd"
+                        d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown header">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownStrategies" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Strategies
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownStrategies">
+                            <li><a class="dropdown-item" href="../optionStrategies/beginner/beginner.html">Beginner</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="../optionStrategies/intermediate/intermediate.html">Intermediate</a></li>
+                            <li><a class="dropdown-item" href="../optionStrategies/advanced/advanced.html">Advanced</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../optionStrategies/master/master.html">Master</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item header">
+                        <a class="nav-link" href="#">Basics</a>
+                    </li>
+                    <li class="nav-item dropdown header">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTrading" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Trading
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownTrading">
+                            <li><a class="dropdown-item" href="#">ETFs</a></li>
+                            <li><a class="dropdown-item" href="#">Brokers</a></li>
+                            <li><a class="dropdown-item" href="#">Expectations</a></li>
+                            <li><a class="dropdown-item" href="#">Managing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item header">
+                        <a class="nav-link" href="../definitions/definitions.html">Definitions</a>
+                    </li>
+                    <li class="nav-item header">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="main-slider container-fluid">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="" class="d-block w-100" alt="">
+                    <div class="carousel-caption">
+                        <h5>Check out strategies by skill</h5>
+                        <button type="button" class="btn btn-secondary btn-lg caption-btn">Beginner</button>
+                        <button type="button" class="btn btn-secondary btn-lg caption-btn">Intermediate</button>
+                        <button type="button" class="btn btn-secondary btn-lg caption-btn">Advanced</button>
+                        <button type="button" class="btn btn-secondary btn-lg caption-btn">Master</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="">
+                    <div class="carousel-caption">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="">
+                    <div class="carousel-caption">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- search for strategy you already know goes here -->
+
+    <div class="search-options container">
+        <!-- need to write js to manipulate form action (page to visit) based on selection -->
+        <form action="" autocomplete="off" id="search-option-form">
+            <h1 class="display-4">Find the strategy you are looking for fast</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-md-6 autocomplete">
+                        <input type="text" placeholder="Enter option strategy" class="form-control"
+                            id='search-option-input'>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <button type="submit" class="btn btn-success" id="search-option-btn">Search for
+                            strategy</button>
+                    </div>
+                </div>
+        </form>
+    </div>
+
+
+    <div class="content container">
+        <div class="row filter-btn-container">
+
+            <div class="col-6 col-md-3">
+                <button class="btn btn-dark btn-lg d-flex justify-content-center filter-btn"
+                    onclick="filterSelection('all')" type="button">ALL</button>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <button class="btn btn-success btn-lg d-flex justify-content-center filter-btn"
+                    onclick="filterSelection('bull')" type="button">BULL</button>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <button class="btn btn-danger btn-lg d-flex justify-content-center filter-btn"
+                    onclick="filterSelection('bear')" type="button">BEAR</button>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <button class="btn btn-primary btn-lg d-flex justify-content-center filter-btn"
+                    onclick="filterSelection('neutral')" type="button">NEUTRAL</button>
+            </div>
+        </div>
+
+
+        <div class="option-plays">
+
+            <div class="image bull">
+                <h2>LONG CALL</h2>
+                <img class="trade-img" src="../images/long_call.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bull"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/longCall/longCall.html">
+                        <div class="title-image">Bullish</div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="image bear">
+                <h2>LONG PUT</h2>
+                <img class="trade-img" src="../images/long_put.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bear"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/longPut/longPut.html">
+                        <div class="title-image">Bearish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bull">
+                <h2>COVERED CALL</h2>
+                <img class="trade-img" src="../images/covered_call.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bull"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bullish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bull">
+                <h2>CASH SECURED PUT</h2>
+                <img class="trade-img" src="../images/cash_secured_put.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bull"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bullish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image neutral">
+                <h2>PROTECTIVE PUT</h2>
+                <img class="trade-img" src="../images/protective_put.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-neutral"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Neutral</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bull">
+                <h2>COLLAR</h2>
+                <img class="trade-img" src="../images/collar.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bull"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bullish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bull">
+                <h2>LONG CALL SPREAD</h2>
+                <img class="trade-img" src="../images/long_call_spread.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bull"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bullish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bear">
+                <h2>LONG PUT SPREAD</h2>
+                <img class="trade-img" src="../images/long_put_spread.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bear"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bearish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image neutral">
+                <h2>JADE LIZARD</h2>
+                <img class="trade-img" src="../images/jade_lizard.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-neutral"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Neutral</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bear">
+                <h2>SHORT CALL</h2>
+                <img class="trade-img" src="../images/short_call.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bear"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bearish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bull">
+                <h2>SHORT PUT SPREAD</h2>
+                <img class="trade-img" src="../images/short_put_spread.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bull"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bullish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bull">
+                <h2>SHORT PUT</h2>
+                <img class="trade-img" src="../images/short_put.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bull"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bullish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bull">
+                <h2>POOR MANS COVERED CALL</h2>
+                <img class="trade-img" src="../images/pmcc.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bull"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bullish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bear">
+                <h2>SHORT CALL SPREAD</h2>
+                <img class="trade-img" src="../images/short_call_spread.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bear"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bearish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image neutral">
+                <h2>LONG STRADDLE</h2>
+                <img class="trade-img" src="../images/long_straddle.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-neutral"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Neutral</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image neutral">
+                <h2>LONG STRANGLE</h2>
+                <img class="trade-img" src="../images/long_strangle.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-neutral"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Neutral</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bull">
+                <h2>BACK SPREAD WITH CALLS</h2>
+                <img class="trade-img" src="../images/back_spread_with_calls.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bull"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bullish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bear">
+                <h2>BACK SPREAD WITH PUTS</h2>
+                <img class="trade-img" src="../images/back_spread_with_puts.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bear"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bearish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image neutral">
+                <h2>LONG CALENDAR SPREAD WITH CALLS</h2>
+                <img class="trade-img" src="../images/long_calendar_spread_with_calls.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-neutral"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Neutral</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image neutral">
+                <h2>LONG CALENDAR SPREAD WITH PUTS</h2>
+                <img class="trade-img" src="../images/long_calendar_spread_with_puts.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-neutral"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Neutral</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image neutral">
+                <h2>DIAGONAL SPREAD WITH CALLS</h2>
+                <img class="trade-img" src="../images/diagonal_spread_with_calls.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-neutral"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Neutral</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image neutral">
+                <h2>DIAGONAL SPREAD WITH PUTS</h2>
+                <img class="trade-img" src="../images/diagonal_spread_with_puts.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-neutral"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Neutral</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image neutral">
+                <h2>LONG BUTTERFLY SPREAD WITH CALLS</h2>
+                <img class="trade-img" src="../images/long_butterfly_spread_with_calls.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-neutral"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Neutral</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image neutral">
+                <h2>LONG BUTTERFLY SPREAD WITH PUTS</h2>
+                <img class="trade-img" src="../images/long_butterfly_spread_with_puts.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-neutral"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Neutral</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image neutral">
+                <h2>IRON BUTTERFLY</h2>
+                <img class="trade-img" src="../images/iron_butterfly.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-neutral"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Neutral</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bull">
+                <h2>BROKEN WING BUTTERFLY WITH CALLS</h2>
+                <img class="trade-img" src="../images/broken_wing_butterfly_with_calls.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bull"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bullish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bear">
+                <h2>BROKEN WING BUTTERFLY WITH PUTS</h2>
+                <img class="trade-img" src="../images/broken_wing_butterfly_with_puts.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bear"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bearish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bull">
+                <h2>INVERSE BROKEN WING BUTTERFLY WITH CALLS</h2>
+                <img class="trade-img" src="../images/inverse_broken_wing_butterfly_with_calls.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bull"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bullish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bear">
+                <h2>INVERSE BROKEN WING BUTTERFLY WITH PUTS</h2>
+                <img class="trade-img" src="../images/inverse_broken_wing_butterfly_with_puts.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bear"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bearish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bull">
+                <h2>CHRISTMAS TREE BUTTERFLY WITH CALLS</h2>
+                <img class="trade-img" src="../images/christmas_tree_butterfly_with_calls.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bull"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bullish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bear">
+                <h2>CHRISTMAS TREE BUTTERFLY WITH PUTS</h2>
+                <img class="trade-img" src="../images/christmas_tree_butterfly_with_calls.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bear"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bearish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image neutral">
+                <h2>LONG CONDOR SPREAD WITH CALLS</h2>
+                <img class="trade-img" src="../images/long_condor_spread_with_calls.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-neutral"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Neutral</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image neutral">
+                <h2>LONG CONDOR SPREAD WITH PUTS</h2>
+                <img class="trade-img" src="../images/long_condor_spread_with_calls.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-neutral"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Neutral</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image neutral">
+                <h2>IRON CONDOR</h2>
+                <img class="trade-img" src="../images/iron_condor.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-neutral"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Neutral</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image neutral">
+                <h2>SHORT STRADDLE</h2>
+                <img class="trade-img" src="../images/short_straddle.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-neutral"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Neutral</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image neutral">
+                <h2>SHORT STRANGLE</h2>
+                <img class="trade-img" src="../images/short_strangle.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-neutral"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Neutral</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bull">
+                <h2>SYNTHETIC LONG</h2>
+                <img class="trade-img" src="../images/synthetic_long.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bull"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bullish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bear">
+                <h2>SYNTHETIC SHORT</h2>
+                <img class="trade-img" src="../images/synthetic_short.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bear"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bearish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bull">
+                <h2>FRONT SPREAD WITH CALLS</h2>
+                <img class="trade-img" src="../images/front_spread_with_calls.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bull"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bullish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image bear">
+                <h2>FRONT SPREAD WITH PUTS</h2>
+                <img class="trade-img" src="../images/front_spread_with_puts.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-bear"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Bearish</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image neutral">
+                <h2>DOUBLE DIAGONAL</h2>
+                <img class="trade-img" src="../images/double_diagonal_spread.png" alt="">
+                <div class="overlay-image overlay-image--blur">
+                    <a class="box-link-neutral"
+                        href="C:/Users/RSPARLIN/Desktop/website/optionStrategies/subPages/coveredCall/coveredCall.html">
+                        <div class="title-image">Neutral</div>
+                    </a>
+                </div>
+            </div> -->
+
+
+        </div>
+
+    </div>
+
+
+
+    <script src="filterScript.js"></script>
+    <script src="autoComplete.js"></script>
+    <script src="changeFormAction.js"></script>r
+
+</body>
+
+</html>

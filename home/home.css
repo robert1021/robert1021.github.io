@@ -1,0 +1,224 @@
+body {
+    /* background: url("images/bull.jpg") !important; */
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+
+.navbar {
+    background-color: #36454F !important;
+    
+}
+
+#navbarNavDropdown {
+    justify-content: right !important;
+    margin-right: 100px !important;
+}
+
+.header {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: large !important;
+    
+}
+
+.nav-link:focus , .nav-link:hover {
+    color: #ff8c00 !important;
+}
+
+.main-slider {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.search-options {
+    padding: 30px !important;
+}
+
+/* styling for autocomplete input box */
+.autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+}
+
+.autocomplete-items {
+    position: absolute;
+    /* border: 1px solid #d4d4d4; */
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
+/* ends here */
+
+
+
+
+#search-option-btn {
+    width: 200px;
+}
+
+.carousel-item {
+    height: 500px;
+    background-color: #301934;
+    /* border-radius: 5px;
+    border: 2px solid black; */
+}
+
+.caption-btn {
+    margin-bottom: 5px;
+}
+
+.caption-btn:hover {
+    color: #ff8c00;
+}
+
+.search-options {
+    margin-top: 50px;
+    height: 250px;
+    background-color: #6c757d;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+.content {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 50px;
+    max-width: 1000px;
+    background: white;
+    /* opacity: 0.9; */
+}
+
+.filter-btn-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    width: 150px;
+    margin: auto;
+    margin-bottom: 10px;
+   
+}
+
+.option-plays {
+    margin-left: 3%;
+    overflow: hidden;
+    /* opacity: 0.9; */
+}
+
+.image h2 {
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    background-color: #36454F;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    
+    width: 300px !important;
+}
+.image {
+    position: relative;
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.show {
+    display: inline-block;
+  }
+
+.trade-img {
+    display: block;
+    width: 100%;
+
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    border: 1px solid black;
+    
+}
+.overlay-image--blur {
+    backdrop-filter: blur(5px);
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+}
+.overlay-image:hover {
+    opacity: 1;
+}
+.title-image {
+    font-size: 3em;
+    font-weight: bold;
+    
+}
+.box-link-bull {
+    color: white;
+    border: 1px solid black;
+    background-color: green;
+    text-decoration: none;
+    box-shadow: none;
+    border-radius: 5px;
+}
+.box-link-bear {
+    color: white;
+    border: 1px solid black;
+    background-color: red;
+    text-decoration: none;
+    box-shadow: none;
+    border-radius: 5px;
+}
+.box-link-neutral {
+    color: white;
+    border: 1px solid black;
+    background-color: blue;
+    text-decoration: none;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+.box-link-bull:hover, .box-link-bear:hover, .box-link-neutral:hover {
+    color: white !important;
+}

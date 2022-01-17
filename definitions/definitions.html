@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="definitions.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+        </script>
+
+</head>
+
+
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../home/index.html">Website Name and Logo Here <svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                    <path fill-rule="evenodd"
+                        d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown header">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownStrategies" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Strategies
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownStrategies">
+                            <li><a class="dropdown-item" href="../optionStrategies/beginner/beginner.html">Beginner</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="../optionStrategies/intermediate/intermediate.html">Intermediate</a></li>
+                            <li><a class="dropdown-item" href="../optionStrategies/advanced/advanced.html">Advanced</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../optionStrategies/master/master.html">Master</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item header">
+                        <a class="nav-link" href="#">Basics</a>
+                    </li>
+                    <li class="nav-item dropdown header">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTrading" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Trading
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownTrading">
+                            <li><a class="dropdown-item" href="#">ETFs</a></li>
+                            <li><a class="dropdown-item" href="#">Brokers</a></li>
+                            <li><a class="dropdown-item" href="#">Expectations</a></li>
+                            <li><a class="dropdown-item" href="#">Managing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item header">
+                        <a class="nav-link" href="../definitions/definitions.html">Definitions</a>
+                    </li>
+                    <li class="nav-item header">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="title container">
+        <h1 id="key-terms">Key Terms - ALL</h1>
+    </div>
+
+    <div class="sort-bar container">
+
+        <button type="button" class="btn btn-dark" id="all">ALL</button>
+        <button type="button" class="btn btn-secondary" id="a">A</button>
+        <button type="button" class="btn btn-secondary" id="b">B</button>
+        <button type="button" class="btn btn-secondary" id="c">C</button>
+        <button type="button" class="btn btn-secondary" id="d">D</button>
+        <button type="button" class="btn btn-secondary" id="e">E</button>
+        <button type="button" class="btn btn-secondary" id="f">F</button>
+        <button type="button" class="btn btn-secondary" id="g">G</button>
+        <button type="button" class="btn btn-secondary" id="h">H</button>
+        <button type="button" class="btn btn-secondary" id="i">I</button>
+        <button type="button" class="btn btn-secondary" id="j">J</button>
+        <button type="button" class="btn btn-secondary" id="k">K</button>
+        <button type="button" class="btn btn-secondary" id="l">L</button>
+        <button type="button" class="btn btn-secondary" id="m">M</button>
+        <button type="button" class="btn btn-secondary" id="n">N</button>
+        <button type="button" class="btn btn-secondary" id="o">O</button>
+        <button type="button" class="btn btn-secondary" id="p">P</button>
+        <button type="button" class="btn btn-secondary" id="q">Q</button>
+        <button type="button" class="btn btn-secondary" id="r">R</button>
+        <button type="button" class="btn btn-secondary" id="s">S</button>
+        <button type="button" class="btn btn-secondary" id="t">T</button>
+        <button type="button" class="btn btn-secondary" id="u">U</button>
+        <button type="button" class="btn btn-secondary" id="v">V</button>
+        <button type="button" class="btn btn-secondary" id="w">W</button>
+        <button type="button" class="btn btn-secondary" id="x">X</button>
+        <button type="button" class="btn btn-secondary" id="y">Y</button>
+        <button type="button" class="btn btn-secondary" id="z">Z</button>
+
+    </div>
+
+    <div class="all-terms container">
+
+        <div id="assingment" class="box row">
+            <h2>Assignment</h2>
+            <p>The receipt of an exercise notice by an equity option seller (writer) that obligates him/her to sell
+                (in the case of a short call) or buy (in the case of a short put) 100 shares of underlying stock at the
+                strike price per share.
+            </p>
+        </div>
+
+        <div id="at-the-money" class="box row">
+            <h2>At The Money</h2>
+            <p>
+                An equity call or put option is at-the-money when its strike price is the same as the current underlying
+                stock price.
+            </p>
+
+        </div>
+
+        <div id="back-month" class="box row">
+            <h2>Back Month</h2>
+            <p>
+                For an option spread involving two expiration months, the month that is farther away in time.
+            </p>
+        </div>
+
+        <div id="break-even-point" class="box row">
+            <h2>Break Even Point</h2>
+            <p>
+                An underlying stock price at which an option strategy will realize neither a profit nor a loss,
+                generally at option expiration.
+            </p>
+        </div>
+
+        <div id="call-option" class="box row">
+            <h2>Call Option</h2>
+            <p>
+                An equity option that gives its buyer the right to buy 100 shares of the underlying stock at the strike
+                price per share at any time before it expires.
+                The call seller (or writer), on the other hand, has the obligation to sell 100 shares at the strike
+                price if called upon to do so.
+            </p>
+        </div>
+
+        <div id="cash-settlement" class="box row">
+            <h2>Cash Settlement</h2>
+            <p>
+                A settlement style that is generally characteristic of index options. Instead of stock changing hands
+                after a call or put is exercised (physical settlement), cash changes hands.
+                When an in-the-money contract is exercised, a cash equivalent of the option's intrinsic value is paid to
+                the option holder by the option seller (writer) who is assigned.
+            </p>
+        </div>
+
+        <div id="closing-transaction" class="box row">
+            <h2>Closing Transaction</h2>
+            <p>
+                A transaction that eliminates (or reduces) an open option position.
+                A closing sell transaction eliminates or reduces a long position. A closing buy transaction eliminates
+                or reduces a short position.
+            </p>
+        </div>
+
+        <div id="commission" class="box row">
+            <h2>Commission</h2>
+            <p>
+                The fee charged by a brokerage firm for its services in the execution of a stock or option order on a
+                securities exchange.
+            </p>
+        </div>
+
+        <div id="cost-to-carry" class="box row">
+            <h2>Cost To Carry</h2>
+            <p>
+                The total costs involved with establishing and maintaining an option and/or stock position,
+                such as interest paid on a margined long stock position or dividends owed for a short stock position.
+            </p>
+        </div>
+
+        <div id="credit" class="box row">
+            <h2>Credit</h2>
+            <p>
+                Any cash received in an account from the sale of an option or stock position.
+                With a complex strategy involving multiple parts (legs), a net credit transaction is one in which the
+                total cash amount received is greater than the total cash amount paid.
+            </p>
+        </div>
+
+        <div id="debit" class="box row">
+            <h2>Debit</h2>
+            <p>
+                Any cash paid out of an account for the purchase of an option or stock position. With a complex strategy
+                involving multiple parts (legs),
+                a net debit transaction is one in which the total cash amount paid is greater than the total cash amount
+                received.
+            </p>
+        </div>
+
+        <div id="delta" class="box row">
+            <h2>Delta</h2>
+            <p>
+                The amount a theoretical option's price will change for a corresponding one-unit (point) change in the
+                price of the underlying security.
+            </p>
+        </div>
+
+        <div id="early-exercise-assignment" class="box row">
+            <h2>Early Exercise Assignment</h2>
+            <p>
+                The exercise or assignment of an option contract before its expiration.
+                This is a feature of American-style options that may be exercised or assigned at any time before they
+                expire.
+            </p>
+        </div>
+
+        <div id="equity-option" class="box row">
+            <h2>Equity Option</h2>
+            <p>
+                A contract that gives its buyer (owner) the right, but not the obligation,
+                to either buy or sell 100 shares of a specific underlying stock or exchange-traded fund (ETF) at a
+                specific price (strike or exercise price) per share,
+                at any time before the contract expires.
+            </p>
+        </div>
+
+        <div id="even-money" class="box row">
+            <h2>Even Money</h2>
+            <p>
+                With a complex strategy involving multiple parts (legs), an even money transaction results when the
+                total cash amount received is the same as the total cash amount paid.
+            </p>
+        </div>
+
+        <div id="etf" class="box row">
+            <h2>Exchange Traded Fund</h2>
+            <p>
+                A security that represents shares of ownership in a fund or investment trust that holds a basket
+                (collection)
+                of specific component stocks. ETF shares are listed and traded on securities exchanges just like stock,
+                and so may be bought and sold throughout the trading day.
+            </p>
+        </div>
+
+        <div id="ex-dividend" class="box row">
+            <h2>Ex Dividend</h2>
+            <p>
+                When a corporation declares a dividend, it will simultaneously declare a “record date” on which an
+                investor
+                must be recorded into the company's books as a shareholder to receive that dividend.
+                Also included in the declaration is the “payable date,” which comes after the record date, and is the
+                actual date dividend payments are made. Once these dates are established, the exchanges will then set
+                the “ex-dividend” date (“ex-date”) for two business days prior to the record date. If you buy stock
+                before the ex-dividend date, you will be eligible to receive the upcoming dividend payment.
+                If you buy stock on the ex-date or afterwards, you will not receive the dividend.
+            </p>
+        </div>
+
+        <div id="excercise" class="box row">
+            <h2>Excersice</h2>
+            <p>
+                To employ the rights an equity option contract conveys to its buyer to either buy (in the case of a
+                call) or sell (in the case of a put) 100 shares of the underlying security at the strike price per share
+                at any time before the contract expires.
+            </p>
+        </div>
+
+        <div id="excercise-price" class="box row">
+            <h2>Excercise Price</h2>
+            <p>
+                A term of any equity option contract, it is the price per share at which shares of stock will change
+                hands after an option is exercised or assigned. Also referred to as the “strike price,” or simply the
+                “strike.”
+            </p>
+
+        </div>
+
+        <div id="expiration-date" class="box row">
+            <h2>Expiration Date</h2>
+            <p>
+                The day on which an option contract literally expires and ceases to exist. For equity options, this is
+                the Saturday following the third Friday of the expiration month. The last day on which expiring equity
+                options trade and may be exercised is the business day prior to the expiration date, or generally the
+                third Friday of the month.
+            </p>
+        </div>
+
+        <div id="expiration-month" class="box row">
+            <h2>Expiration Month</h2>
+            <p>
+                The calendar month during which a specific expiration date occurs.
+            </p>
+        </div>
+
+        <div id="extrinsic-value" class="box row">
+            <h2>Extrinisic Value</h2>
+            <p>
+                The portion of an option's premium (price) that exceeds its intrinsic value, if it is in-the-money. If
+                the option is out-of-the-money, the extrinsic value is equal to the entire premium. Also known as “time
+                value.”
+            </p>
+        </div>
+
+        <div id="front-month" class="box row">
+            <h2>Front Month</h2>
+            <p>
+                For an option spread involving two expiration months, the month that is nearer in time.
+
+
+            </p>
+        </div>
+
+        <div id="gamma" class="box row">
+            <h2>Gamma</h2>
+            <p>
+                The amount a theoretical option's delta will change for a corresponding one-unit (point) change in the
+                price of the underlying security.
+            </p>
+        </div>
+
+        <div id="historic-volitility" class="box row">
+            <h2>Historic Volitility</h2>
+            <p>
+                A measurement of the actual observed volatility of a specific stock over a given period of time in the
+                past, such as a month, quarter or year.
+
+
+            </p>
+        </div>
+
+        <div id="implied-volitiliy" class="box row">
+            <h2>Implied Volitility</h2>
+            <p>
+                An estimate of an underlying stock's future volatility as predicted or implied by an option's current
+                market price. Implied volatility for any option can only be determined via an option pricing model.
+            </p>
+        </div>
+
+        <div id="index-option" class="box row">
+            <h2>Index Option</h2>
+            <p>
+                An option contract whose underlying security is an index (like the NASDAQ), not shares of any particular
+                stock.
+            </p>
+        </div>
+
+        <div id="in-the-money" class="box row">
+            <h2>In The Money</h2>
+            <p>
+                An equity call contract is in-the-money when its strike price is less than the current underlying stock
+                price. An equity put contract is in-the-money when its strike price is greater than the current
+                underlying stock price.
+            </p>
+        </div>
+
+        <div id="intrinsic-value" class="box row">
+            <h2>Intrinsic Value</h2>
+            <p>
+                The in-the-money portion (if any) of a call or put contract's current market price.
+            </p>
+        </div>
+
+        <div id="leaps" class="box row">
+            <h2>Leaps</h2>
+            <p>
+                Long-term Equity AnticiPation Securities, or LEAPS, are long-term option contracts. Equity LEAPS calls
+                and puts can have expirations up to three years into the future and expire in January of their
+                expiration years.
+            </p>
+        </div>
+
+        <div id="leg" class="box row">
+            <h2>Leg</h2>
+            <p>
+                One part of a complex position composed of two or more different options and/or a position in the
+                underlying stock. Instead of entering one order to establish all parts of a complex position
+                simultaneously, one part is executed with the hope of establishing the other part(s) later at a better
+                price.
+            </p>
+        </div>
+
+        <div id="lognormal-distribution" class="box row">
+            <h2>Lognormal Distribution</h2>
+            <p>
+                With respect to stock prices over a period of time, a lognormal distribution of daily price changes
+                represents not the actual dollar amount of each change, but instead the logarithms of each change.
+                Mathematically, this type of distribution implies that a stock's price can only range between 0 and
+                infinity, which in the real world is the case. So in a sense a lognormal distribution could be
+                considered to have a bullish bias. A stock can only drop 100% in value but can increase by more than
+                100%. In general, assumptions made by option pricing models about a stock's future volatility are based
+                on a lognormal distribution of future price changes.
+            </p>
+        </div>
+
+        <div id="normal-distribution" class="box row">
+            <h2>Normal Distribution</h2>
+            <p>
+                One of the most familiar mathematical distributions, it is a set of random observed numbers (or closing
+                stock prices) whose distribution is symmetrical around the mean or average number. A graph of the
+                distribution is the familiar “bell curve,” with the most frequently occurring numbers clustered around
+                the mean, or the middle of the bell. Since this a symmetrical distribution, when the numbers represent
+                daily stock price changes, for every possible change to the upside there must be an equal price change
+                to the downside. The result is that a normal distribution would theoretically allow negative stock
+                prices. Stock prices are unlimited to the upside, but in the real world a stock can only decline to
+                zero. See “lognormal distribution.”
+            </p>
+        </div>
+
+        <div id="long-option" class="box row">
+            <h2>Long Option</h2>
+            <p>
+                A position resulting from the opening purchase of a call or put contract and held (owned) in a brokerage
+                account.
+            </p>
+        </div>
+
+        <div id="long-stock" class="box row">
+            <h2>Long Stock</h2>
+            <p>
+                Shares of stock that are purchased and held in a brokerage account and which represent an equity
+                interest in the company that issued the shares.
+            </p>
+        </div>
+
+        <div id="margin requirement" class="box row">
+            <h2>Margin Requirement</h2>
+            <p>
+                The amount of cash and/or securities an option writer is required to deposit and maintain in a brokerage
+                account to cover an uncovered (naked) short option position. This cash can be seen as collateral pledged
+                to the brokerage firm for the writer's obligation to buy (in the case of a put) or sell (in the case of
+                a call) shares of underlying stock in case of assignment.
+            </p>
+        </div>
+
+        <div id="mean" class="box row">
+            <h2>Mean</h2>
+            <p>
+                For a data set, the mean is the sum of the observations divided by the number of observations. The mean
+                is often quoted along with the standard deviation: the mean describes the central location of the data,
+                and the standard deviation describes the range of possible occurrences.
+            </p>
+        </div>
+
+        <div id="opening-transaction" class="box row">
+            <h2>Opening Transaction</h2>
+            <p>
+                A transaction that creates (or increases) an open option position. An opening buy transaction creates or
+                increases a long position; an opening sell transaction creates or increases a short position (also known
+                as writing).
+            </p>
+        </div>
+
+        <div id="option-pricing-model" class="box row">
+            <h2>Option Pricing Model</h2>
+            <p>
+                A mathematical formula used to calculate an option's theoretical value using as input its strike price,
+                the underlying stock's price, volatility and dividend amount, as well as time until expiration and
+                risk-free interest rate. Generated by an option pricing model are the option Greeks: delta, gamma,
+                theta, vega and rho. Well-known and widely used pricing models include the Black-Scholes,
+                Cox-Ross-Rubinstein and Roll-Geske-Whaley.
+            </p>
+        </div>
+
+        <div id="out-of-the-money" class="box row">
+            <h2>Out Of The Money</h2>
+            <p>
+                An equity call option is out-of-the-money when its strike price is greater than the current underlying
+                stock price. An equity put option is out-of-the-money when its strike price is less than the current
+                underlying stock price.
+            </p>
+        </div>
+
+        <div id="physical-settlement" class="box row">
+            <h2>Physical Settlement</h2>
+            <p>
+                The settlement style of all equity options in which shares of underlying stock change hands when an
+                option is exercised
+            </p>
+        </div>
+
+        <div id="premium" class="box row">
+            <h2>Premium</h2>
+            <p>
+                The price paid or received for an option in the marketplace. Equity option premiums are quoted on a
+                price-per-share basis, so the total premium amount paid by the buyer to the seller in any option
+                transaction is equal to the quoted amount times 100 (underlying shares). Option premium consists of
+                intrinsic value (if any) plus time value.
+            </p>
+        </div>
+
+        <div id="profit-loss-graph" class="box row">
+            <h2>Profit Loss Graph</h2>
+            <p>
+                A representation in graph format of the possible profit and loss outcomes of an equity option strategy
+                over a range of underlying stock prices at a given point in the future, most commonly at option
+                expiration.
+            </p>
+        </div>
+
+        <div id="put-option" class="box row">
+            <h2>Put Option</h2>
+            <p>
+                An equity option that gives its buyer the right to sell 100 shares of the underlying stock at the strike
+                price per share at any time before it expires. The put seller (or writer), on the other hand, has the
+                obligation to buy 100 shares at the strike price if called upon to do so.
+
+            </p>
+        </div>
+
+        <div id="rho" class="box row">
+            <h2>Rho</h2>
+            <p>
+                The amount a theoretical option's price will change for a corresponding one-unit (percentage-point)
+                change in the interest rate used to price the option contract.
+            </p>
+        </div>
+
+        <div id="roll" class="box row">
+            <h2>Roll</h2>
+            <p>
+                To simultaneously close one option position and open another with the same underlying stock but a
+                different strike price and/or expiration month. Rolling a long position involves selling those options
+                and buying others. Rolling a short position involves buying the existing position and selling (writing)
+                other options to create a new short position.
+            </p>
+        </div>
+
+        <div id="short-option" class="box row">
+            <h2>Short Option</h2>
+            <p>
+                A position resulting from making the opening sale (or writing) of a call or put contract, which is then
+                maintained in a brokerage account.
+
+            </p>
+        </div>
+
+        <div id="short-stock" class="box row">
+            <h2>Short Stock</h2>
+            <p>
+                A short position that is opened by selling shares in the marketplace that are not currently owned (short
+                sale), but instead borrowed from a broker/dealer. At a later date, shares must be purchased and returned
+                to the lending broker/dealer to close the short position. If the shares can be purchased at a price
+                lower than their initial sale, a profit will result. If the shares are purchased at a higher price, a
+                loss will be incurred. Unlimited losses are possible when taking a short stock position.
+            </p>
+        </div>
+
+        <div id="spread" class="box row">
+            <h2>Spread</h2>
+            <p>
+                A complex option position established by the purchase of one option and the sale of another option with
+                the same underlying security. The two options may be of the same or different types (calls/puts), and
+                may have the same or different strike prices and/or expiration months. A spread order is executed as a
+                package, with both parts (legs) traded simultaneously, at a net debit, net credit, or for even money.
+            </p>
+        </div>
+
+        <div id="strike-price" class="box row">
+            <h2>Strike Price</h2>
+            <p>
+                A term of any equity option contract, it is the price per share at which shares of stock will change
+                hands after an option is exercised or assigned. Also referred to as the “exercise price,” or simply the
+                “strike.”
+            </p>
+        </div>
+
+        <div id="theta" class="box row">
+            <h2>Theta</h2>
+            <p>
+                The amount a theoretical option's price will change for a corresponding one-unit (day) change in the
+                days to expiration of the option contract.
+
+            </p>
+        </div>
+
+        <div id="time-decay" class="box row">
+            <h2>Time Decay</h2>
+            <p>
+                A regular phenomenon in which the time value portion of an option's price decays (decreases) with the
+                passage of time. The rate of this decay increases as expiration gets closer, with the theoretical rate
+                quantified by “theta,” one of the Greeks.
+            </p>
+        </div>
+
+        <div id="time-value" class="box row">
+            <h2>Time Value</h2>
+            <p>
+                For a call or put, it is the portion of the option's premium (price) that exceeds its intrinsic value
+                (in-the-money amount), if it has any. By definition, the premium of at- and out-of-the-money options
+                consists only of time value. It is time value that is affected by time decay as well as changing
+                volatility, interest rates and dividends.
+            </p>
+        </div>
+
+        <div id="underlying-stock" class="box row">
+            <h2>Underlying Stock</h2>
+            <p>
+                The stock on which a specific equity option's value is based, which changes hands when the option is
+                exercised or assigned.
+            </p>
+        </div>
+
+        <div id="vega" class="box row">
+            <h2>Vega</h2>
+            <p>
+                The amount a theoretical option's price will change for a corresponding one-unit (point) change in the
+                implied volatility of the option contract.
+
+            </p>
+        </div>
+
+        <div id="volatility" class="box row">
+            <h2>Volatility</h2>
+            <p>
+                The fluctuation, up or down, in the price of a stock. It is measured mathematically as the annualized
+                standard deviation of that stock's daily price changes.
+
+            </p>
+        </div>
+
+        <div id="write" class="box row">
+            <h2>Write</h2>
+            <p>
+                To sell a call or put option contract that has not already been purchased (owned). This is known as an
+                opening sale transaction and results in a short position in that option. The seller (writer) of an
+                equity option is subject to assignment at any time before expiration and takes on an obligation to sell
+                (in the case of a short call) or buy (in the case of a short put) underlying stock if assignment does
+                occur.
+            </p>
+        </div>
+
+    </div>
+
+    <script src="sortAlpha.js"></script>
+</body>
+
+</html>

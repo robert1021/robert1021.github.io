@@ -1,0 +1,220 @@
+/* main body */
+body {
+    background: url("images/bull.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.page-header {
+    background-color: #303C6C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 200px;
+    padding-left: 30px;
+    min-width: 1200px;
+    height: 50px;
+}
+
+.web-logo {
+    width: 20%;
+}
+
+.web-logo img{
+    width: 100%;
+    
+}
+
+.navbar-items {
+    /* width: 65%;
+    min-width: 65%;
+    height: 65px; */
+    text-align: center;
+   
+}
+
+header p {
+    
+    text-align: center;
+    font-size: 25px;
+    color: #CBF1E1;
+}
+
+header a{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+   
+    
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 10px 15px;
+    transition: all 0.8s ease;
+    position: relative;
+    
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    background-color: orange;
+    
+    
+}
+header ul {
+    list-style: none;
+}
+
+/* dropdowns */
+
+/* dropdowns basics */
+#dropdown-basics {
+    display: none;
+    position: absolute;
+    width: 100%;
+    font-weight: bold;
+    background-color: orange;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+    left: 0;
+    top: 100%;
+    padding: 0;
+}
+
+#dropdown-basics li {
+    padding: 10px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#dropdown-basics li:hover {
+    background-color: #CBF1E1;
+}
+
+#dropdown-basics.active {
+    display: block;
+}
+
+
+/* dropdowns strategy */
+#dropdown-strategy {
+    display: none;
+    position: absolute;
+    width: 100%;
+    font-weight: bold;
+    background-color: orange;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+    left: 0;
+    top: 100%;
+    padding: 0;
+}
+
+#dropdown-strategy li {
+    padding: 10px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#dropdown-strategy a {
+    color: black;
+    font-size: medium;
+ }
+
+#dropdown-strategy li:hover {
+    background-color: #CBF1E1;
+}
+
+#dropdown-strategy.active {
+    display: block;
+}
+
+/* dropdowns managing */
+#dropdown-managing {
+    display: none;
+    position: absolute;
+    width: 100%;
+    font-weight: bold;
+    background-color: orange;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+    left: 0;
+    top: 100%;
+    padding: 0;
+}
+
+#dropdown-managing li {
+    padding: 10px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#dropdown-managing li:hover {
+    background-color: #CBF1E1;
+}
+
+#dropdown-managing.active {
+    display: block;
+}
+
+/* dropdowns resources */
+#dropdown-resources {
+    display: none;
+    position: absolute;
+    width: 100%;
+    font-weight: bold;
+    background-color: orange;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+    left: 0;
+    top: 100%;
+    padding: 0;
+}
+
+#dropdown-resources li {
+    padding: 10px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#dropdown-resources li:hover {
+    background-color: #CBF1E1;
+}
+
+#dropdown-resources.active {
+    display: block;
+}
+
+/* dropdowns trading */
+#dropdown-trading {
+    display: none;
+    position: absolute;
+    width: 100%;
+    font-weight: bold;
+    background-color: orange;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+    left: 0;
+    top: 100%;
+    padding: 0;
+}
+
+#dropdown-trading li {
+    padding: 10px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#dropdown-trading li:hover {
+    background-color: #CBF1E1;
+}
+
+#dropdown-trading.active {
+    display: block;
+}
+/* end of dropdowns */
