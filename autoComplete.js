@@ -104,7 +104,14 @@ function autocomplete(inp, arr) {
 
 
 
-const optionStrategies = ['call', 'long call', 'put', 'long put', 'covered call'];
+const optionStrategies = ['call', 'back spread with calls', 'back spread with puts', 'broken wing butter flys with puts', 'broken wing butterfly with calls',
+'cash secured puts', 'christmas tree butterfly with calls', 'christmas tree butterfly with puts', 'collar', 'covered call', 'diagonal spread withcalls',
+'diagonal spread with puts', 'double diagonal spread', 'front spread with calls', 'front spread with puts', 'inverse brokenwing butterfly with calls',
+'inverse brokenwing butterfly with puts', 'iron butterfly', 'iron condor', 'jade lizard', 'long Butterfly spread with calls', 'long butterfly spread with puts', 
+'long calendar spread with calls', 'long calendar spread with puts', 'long call', 'long call spread', 'long condor spread with calls', 'long condor spread with puts',
+'long put', 'long put spread', 'long straddle', 'long strangle', 'poor man covered call', 'pmcc', 'protective put', 'short call', 'short call spread', 'short put',
+'short put spread', 'short straddle', 'short strangle', 'synthetic long', 'synthetic short'];
+
 const inputElement = document.querySelector('#search-option-input');
 
 autocomplete(inputElement, optionStrategies);
