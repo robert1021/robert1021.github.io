@@ -1,9 +1,7 @@
 body {
-    /* background: url("images/bull.jpg") !important; */
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
 }
-
 
 .navbar {
     background-color: #36454F !important;

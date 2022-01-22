@@ -1,0 +1,29 @@
+body {
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+.navbar {
+    background-color: #36454F !important;
+    
+}
+
+#navbarNavDropdown {
+    justify-content: right !important;
+    margin-right: 100px !important;
+}
+
+.header {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: large !important;
+    
+}
+
+.nav-link:focus , .nav-link:hover {
+    color: #ff8c00 !important;
+}
